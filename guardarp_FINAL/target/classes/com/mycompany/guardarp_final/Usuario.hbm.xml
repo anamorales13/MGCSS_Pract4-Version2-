@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-jun-2018 13:59:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.mycompany.guardarp_final.Usuario" table="USUARIO" schema="CINANA" optimistic-lock="version">
+        <id name="nombre" type="string">
+            <column name="NOMBRE" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
